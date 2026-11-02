@@ -1,0 +1,25 @@
+SAYTNI OCHISH
+1. Zip faylni "Hammasini chiqarish" (Extract All) qiling. Zip ichidan ochmang.
+2. Chiqqan papkadagi index.html ni brauzerda oching.
+3. Papka ichidagi fayllarning joyini o'zgartirmang.
+
+TELEGRAM BOTGA ULASH
+1. Telegramda @BotFather ga yozing: /newbot. Bot yarating va TOKEN oling.
+2. O'z botingizga kirib "salom" deb yozing.
+3. Brauzerda oching: https://api.telegram.org/bot<TOKEN>/getUpdates
+   Natijadagi "chat":{"id": ... } raqami sizning CHAT_ID ingiz.
+4. js/config.js faylini oching va BOT_TOKEN hamda CHAT_ID ni yozing.
+5. Tokenni hech kimga bermang. Sayt internetga chiqarilganda
+   telegram/worker.js (Cloudflare Worker) usulini ishlating.
+
+YORDAMCHI BOT (SUN'IY INTELLEKT)
+1. console.anthropic.com saytida ro'yxatdan o'ting, hisobga ozgina mablag' qo'shing va API kalit oling.
+   MUHIM: shu yerda oylik xarajat limitini (spend limit) past qilib qo'ying.
+2. dash.cloudflare.com da bepul hisob oching: Workers & Pages > Create > Worker.
+3. bot/ai-worker.js ichidagi kodni Worker'ga qo'ying va Deploy qiling.
+4. Worker > Settings > Variables and Secrets: ANTHROPIC_KEY nomi bilan API kalitni "Secret" qilib qo'shing.
+5. Worker manzilini (https://...workers.dev) js/config.js dagi CHAT_URL ga yozing.
+5b. Hisobotlar Telegramingizga kelishi uchun Worker ga yana ikkitasini qo'shing: BOT_TOKEN (Secret) va CHAT_ID (Text),
+   ya'ni Telegram bot tokeni va sizning chat ID raqamingiz (yuqoridagi "TELEGRAM BOTGA ULASH" qadamlari).
+6. Sayt internetga chiqqach, ALLOWED_ORIGIN ga sayt manzilini yozing (begona saytlar botni ishlatmasligi uchun).
+Kalitni sayt fayllariga YOZMANG va hech kimga bermang.
