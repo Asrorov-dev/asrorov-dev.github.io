@@ -1,20 +1,18 @@
-// TELEGRAM SOZLAMASI. Faqat BITTA usulni to'ldiring.
-// 1) Xavfsiz usul (tavsiya): WORKER_URL ga Cloudflare Worker manzilini yozing.
-// 2) Oddiy usul: BOT_TOKEN va CHAT_ID ni yozing. Diqqat: sayt internetga chiqsa, token hammaga ko'rinadi.
+// SOZLAMALAR. Bu faylga TOKEN yozilmaydi: sayt hammaga ochiq.
 const CONFIG = {
-  WORKER_URL: "",
+  // Aloqa formasi: Cloudflare Worker manzili (token Worker ichida, yopiq joyda)
+  WORKER_URL: "https://asrorov-forma.asrorov-dev.workers.dev",
   BOT_TOKEN: "",
   CHAT_ID: "",
 
-  // Yordamchi bot (sun'iy intellekt): bot/ai-worker.js ni Cloudflare'ga joylagach, manzilini shu yerga yozing
+  // Sun'iy intellektli yordamchi bot (keyingi qadamda to'ldiriladi)
   CHAT_URL: ""
 };
 
-// SAYTDAGI HAVOLALAR. Bo'sh qoldirilganlari saytda ko'rinmaydi.
-// Telefon, Telegram va Instagram sahifalarda doimiy turibdi; qolganlarini shu yerda to'ldiring.
+// Saytdagi qo'shimcha havolalar. Bo'sh qoldirilganlari ko'rinmaydi.
 const LINKS = {
   BOT_USERNAME: "asrorov_dev_bot",
   EMAIL: "abdugofurasrorov777@gmail.com",
-  GITHUB: "",         // GitHub foydalanuvchi nomi
-  LINKEDIN: ""        // LinkedIn foydalanuvchi nomi
+  GITHUB: "Asrorov-dev",
+  LINKEDIN: ""
 };
