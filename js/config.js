@@ -13,6 +13,5 @@ const CONFIG = {
 const LINKS = {
   BOT_USERNAME: "asrorov_dev_bot",
   EMAIL: "abdugofurasrorov777@gmail.com",
-  GITHUB: "Asrorov-dev",
   LINKEDIN: ""
 };
