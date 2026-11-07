@@ -5,8 +5,8 @@ const CONFIG = {
   BOT_TOKEN: "",
   CHAT_ID: "",
 
-  // Sun'iy intellektli yordamchi bot (keyingi qadamda to'ldiriladi)
-  CHAT_URL: ""
+  // Sun'iy intellektli yordamchi bot (Cloudflare Worker manzili)
+  CHAT_URL: "https://asrorov-bot.asrorov-dev.workers.dev"
 };
 
 // Saytdagi qo'shimcha havolalar. Bo'sh qoldirilganlari ko'rinmaydi.
